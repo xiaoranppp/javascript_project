@@ -20,12 +20,21 @@
             var lastPoint = {x: undefined, y: undefined};
             ctx.fillStyle = 'red';
             var k=10;
-           canvas.onmousemove = function (e) {
+            canvas.onmousemove = function (e) {
                   painting = true;
                   let x = e.clientX;
                   let y = e.clientY;
                   lastPoint = {"x": x, "y": y};
                   document.onkeydown = keyDown;
+                  ctx.beginPath();
+                  ctx.arc(lastPoint.x,lastPoint.y,k,0,2*Math.PI);
+                  ctx.closePath();
+                  ctx.fill();
+                  };
+            canvas.ontouchmove = function (e) {
+                  let x = e.touches[0].clientX;
+                  let y = e.touches[0].clientY;
+                  lastPoint = {"x": x, "y": y};
                   ctx.beginPath();
                   ctx.arc(lastPoint.x,lastPoint.y,k,0,2*Math.PI);
                   ctx.closePath();
