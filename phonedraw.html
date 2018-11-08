@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <canvas id="drawing-board"></canvas>
+        <title>draw pen</title> 
+        
+    </head> 
+    <body> 
+            <canvas id="drawing-board"></canvas>
+            <script>
+            var canvas = document.getElementById("drawing-board");
+            var ctx = canvas.getContext("2d");
+            var pageWidth = document.documentElement.clientWidth
+            var pageHeight = document.documentElement.clientHeight
+
+            canvas.width = pageWidth
+            canvas.height = pageHeight
+
+            canvas.style.position='absolute';
+            //canvas.style.margin= 'auto';//居中！！！github? AXE?
+            canvas.style.background = '#D3D3D3';
+            var lastPoint = {x: undefined, y: undefined};
+            ctx.fillStyle = 'red';
+            var k=10;
+           canvas.ontouchmove = function (e) {
+                  let x = e.touches[0].clientX;
+                  let y = e.touches[0].clientY;
+                  lastPoint = {"x": x, "y": y};
+                  ctx.beginPath();
+                  ctx.arc(lastPoint.x,lastPoint.y,k,0,2*Math.PI);
+                  ctx.closePath();
+                  ctx.fill();
+                  };
+       
+  
+
+
+  
+
+            </script>
+    </body> 
+</html> 
