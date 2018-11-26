@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="css/lightbox.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+	<main>
+	<div id='title'>
+	<h1>Nine images</h1>
+	</div>
+	
+		
+		<!-- <a href=""><img src=""></a>
+		<a href="images/kids.jpg" ><img src="images/kids.jpg" alt="My Three kids"></a>
+		<a href=""><img src=""></a>
+		<a href=""><img src=""></a>
+		<a href=""><img src=""></a>
+		<a href=""><img src=""></a>
+		<a href=""><img src=""></a>
+		<a href=""><img src=""></a>
+		<a href=""></a> -->
+		<div class='grid'>
+		<div class="item">
+				<div class="item-content">
+					<a class="example-image-link" href="images/first.jpg" data-lightbox="example-set" data-title="Sunset (Click the right half of the image or press the right arrow to move forward.)"><img class="example-image" src="images/first.jpg" alt="Sunset"/></a>
+				</div>
+		</div>
+        <div class="item">
+				<div class="item-content">
+					<a class="example-image-link" href="images/second.jpg" data-lightbox="example-set" data-title="Spring"><img class="example-image" src="images/second.jpg" alt="Spring"/></a>
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="images/third.jpg" data-lightbox="example-set" data-title="Lake"><img class="example-image" src="images/third.jpg" alt="Lake"/></a>
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="images/fourth.jpg" data-lightbox="example-set" data-title="Tree"><img class="example-image" src="images/fourth.jpg" alt="Tree"/></a>
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="images/fifth.jpg" data-lightbox="example-set" data-title="Snow"><img class="example-image" src="images/fifth.jpg" alt="Snow"/></a>		
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Bridge"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt="Bridge"/></a>
+
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Moutain."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="Mountain" /></a>
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="Road."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="Road" /></a>	
+				</div>
+		</div>
+		<div class="item">
+				<div class="item-content">
+						<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Sea (Click anywhere outside the image or the X to the right to close.)"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="Sea" /></a>
+				</div>
+		</div>
+		
+        </div>
+	
+	<script src="js/lightbox-plus-jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
+    <script>var grid = new Muuri('.grid');
+
+          var grid = new Muuri('.grid', {dragEnabled: true});
+    </script>
+	</main>
+
+</body>
+</html>
